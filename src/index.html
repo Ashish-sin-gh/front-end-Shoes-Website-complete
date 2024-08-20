@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes ecommerce website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body class="relative bg-gradient-to-br from-purple-50 via-orange-50 to-transparent" >
+    <!--header nav-->
+    <header class="mb-2 pt-3">
+        <section class=" pb-3 mx-4 flex flex- flex-row justify-between content-center">
+            <div id="header-logo">
+                <img src="/assets/icons/nikelogo.svg" alt="logo" class="h-8 w-20 object-cover">
+            </div>
+            <div id="nav-bar" class="max-lg:hidden">
+                <ul class="flex flex-row ">
+                    <li class="px-3 border-gray-500  border-r-2 font-semibold text-sm tracking-wide">
+                        <a href="">Find a Store</a>
+                    </li>
+                    <li class="px-3 border-gray-500  border-r-2 font-semibold text-sm tracking-wide">
+                        <a href="">Help</a>
+                    </li>
+                    <li class=" px-3 border-gray-500  border-r-2 font-semibold text-sm tracking-wide">
+                        <a href="">Join us</a>
+                    </li>
+                    <li class=" px-3 font-semibold text-sm tracking-wide">
+                        <a href="">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="humbuger-small-devices" class=" hidden max-lg:block">
+                <img id="hamburger-img" src="/assets/icons/hamburger.svg"/ class="h-6 w-6 ">
+            </div>
+        </section>      
+        <section class="py-4 bg-[#fff] flex justify-between content-center max-lg:flex max-lg:justify-between gap-5">
+            <div class=" ml-4 ">
+                <img class="h-8" src="/assets/icons/nikeman.svg">
+            </div>
+            <div class="max-lg:hidden max-sm:hidden">
+                <ul class="flex  gap-8 text-lg font-semibold"> 
+                    <li>New & Featured</li>
+                    <li>Men</li>
+                    <li>women</li>
+                    <li>Kids</li>
+                    <li>sale</li>
+                </ul>
+            </div>
+            <div class="flex items-center relative mr-4">
+                <img src="/assets/icons/searchimg.svg" alt="" class=" border-1 border-black rounded-full px-2 py-1 absolute">
+                <input type="text" placeholder="Search" class=" mr-4 pl-10 py-1 w-[80%] border-2 border-black hover:ring-1 hover:ring-black focus:ring-2 focus:ring-black  rounded-full">
+                <img src="/assets/icons/heart.svg" alt="wishlist-heart" class="w-8 mx-4 block">
+                <img src="/assets/icons/cart.svg" alt="cart" class="w-8 block">
+            </div>
+        </section>
+    </header>
+
+<!-- hero section-->
+    <main class="max-w-[1440px] my-0 flex max-sm:flex-col max-sm:justify-center  mx-auto xl:h-screen relative pt-4 mb-12">
+    <!-- hero section -->
+        <div id="hero-container" class="relative">
+            <div id="hero" class=" flex flex-col justify-center items-start xl:w-3/5 xl:pt-8 xl:pl-8 w-full max-xl:pt-8 max-xl:px-8 ">
+                <p class="text-orange-600 text-lg tracking-wider pb-8 ">Our Summer Collection</p>
+                <h1 class="text-7xl max-sm:text-5xl font-palanquine font-semibold tracking-wider ">
+                    <span class=" font-bold xl:bg-gradient-to-br from-purple-50 via-orange-50 to-transparent xl:whitespace-nowrap xl:absolute z-10 ">The New Arrival</span> 
+                    <br/>
+                    <span class="text-orange-600">Nike</span>
+                    Shoes
+                </h1>
+                <p class="pt-4 w-2/3 xl:text-justify max-xl:text-justify tracking-wider text-gray-600">Step into your journey with style and comfort – where every pair tells a story.</p>
+                <button class="flex justify-center items-center text-lg mt-4  px-3 py-1.5 bg-orange-600 text-white border border-orange-600 rounded-full gap-1.5 hover:ring-1 hover:ring-orange-600">Shop Now
+                    <img src="/assets/icons/arrow-right.svg" alt="arrow-right" class="ml-2 bg-orange-600"
+                </button>
+            </div>
+            <div class="flex gap-10 justify-start items-center px-8 mt-12 m">
+                <p>
+                    <span class="text-5xl tracking-tighter font-semibold max-sm:text-2xl">1k+</span><br>brands
+                </p>
+                <p>
+                    <span class="text-5xl tracking-tighter font-semibold max-sm:text-2xl">500+</span><br>shops
+                </p>
+                <p>
+                    <span class="text-5xl tracking-tighter font-semibold max-sm:text-2xl">250k+</span><br>customers
+                </p>
+            </div>
+        </div> 
+
+        <!-- shoes display -->
+        <div class="pt-12 max-sm:pt-8 relative  justify-center items-center px-8 bg-gradient-to-r from-slate-50 to-slate-100 "> 
+            <img id="bigShoes" src="/assets/images/big-shoe1.png" width="700px" height="auto" class="object-contain z-10">
+
+            <!-- shoe card -->
+            <div class=" flex gap-10 justify-center items-center  mt-8">
+                <section id="shoes1" class="rounded-md hover:ring-2 hover:ring-orange-600 ">
+                    <img src="/assets/images/big-shoe1.png" alt="shoes 1" height="150px" width="150px"/>
+                </section>
+                <section id="shoes2" class="rounded-md hover:ring-2  hover:ring-orange-600 ">
+                    <img src="/assets/images/big-shoe2.png" alt="shoes 1" height="150px" width="150px"/>
+                </section >
+                <section id="shoes3" class="rounded-md hover:ring-2 hover:ring-orange-600 ">
+                    <img src="/assets/images/big-shoe3.png" alt="shoes 1" height="150px" width="150px"/>
+                </section>
+            </div>
+        </div>  
+    </main>      
+        
+
+
+
+
+        <section class="mx-8 pb-12">
+            popular poduct
+        </section>
+        <section class="mx-32 pb-12">
+            services
+        </section>
+        <section class="mx-2  pt-4 pb-12">
+            special offers
+        </section>
+        <section class="mx-4 pb-12">
+            customer review
+        </section>
+        <section class="mx-32 pb-8">
+            subscribe
+        </section>
+        <footer class="pb-12 bg-black">
+            footer
+        </footer>
+
+        
+    
+
+    <!--dropDown-->
+    <div id="burgerDropDown" class="absolute hidden inset-0 bg-[#E5E4E2] min-h-screen">
+        <div class="mt-4 pl-6 flex justify-between">
+            <img src="/public/favicon.ico" class="h-6 w-16 ">
+            <i class="fa-solid fa-xmark mr-6"></i>
+        </div>
+        <ul class="mt-10">
+            <li class="text-2xl p-4 pl-6 hover:bg-white">
+                <a href="#">All Products</a>
+            </li>
+            <li class="text-2xl p-4 pl-6 hover:bg-white">
+                <a href="#">blogs</a>
+            </li>
+            <li class="text-2xl p-4 pl-6 hover:bg-white">
+                <a href="#">social welfare</a>
+            </li>
+            <li class="text-2xl p-4 pl-6 hover:bg-white">
+                <a href="#">subscribe for support</a>
+            </li>
+            <li class="text-2xl p-4 pl-6 hover:bg-white">
+                <a href="#">login</a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
