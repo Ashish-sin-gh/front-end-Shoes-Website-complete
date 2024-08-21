@@ -26,5 +26,4 @@ shoes2.addEventListener('click', ()=>{
 
 shoes3.addEventListener('click', ()=>{
     bigShoes.src = "/assets/images/big-shoe3.png";
-    console.log("shoes 3 touched")
 }); 

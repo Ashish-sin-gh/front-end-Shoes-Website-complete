@@ -2,8 +2,14 @@
 module.exports = {
   content: ["./src/index.html"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'shoeBG' : "url('/assets/images/thumbnail-background.svg')",
+      },
+    },
   },
+  
+
   plugins: [],
 }
 
